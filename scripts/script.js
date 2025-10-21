@@ -45,5 +45,9 @@ function initBtn() {
     btn.addEventListener("click", changeDimensions);
 }
 
-initBtn();
-genSquares(16);
+function initProgram() {
+    initBtn();
+    genSquares(16);
+}
+
+initProgram();

@@ -22,4 +22,26 @@ function genSquares(numRows) {
     }
 }
 
+function clearSquares() {
+    const squares = document.querySelectorAll(".square");
+    squares.forEach(square => square.style.backgroundColor="white");
+}
+
+function delSquares() {
+    const rows = document.querySelectorAll(".row");
+    rows.forEach(row => row.remove());
+}
+
+function changeDimensions() {
+    const size = prompt("Enter a size.");
+    delSquares();
+    genSquares(size);
+}
+
+function initBtn() {
+    const btn = document.querySelector("#btn-wrapper button");
+    btn.addEventListener("click", changeDimensions);
+}
+
+initBtn();
 genSquares(16);

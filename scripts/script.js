@@ -15,7 +15,9 @@ function genSquares(numRows) {
             const square = document.createElement("div");
             square.className = "square";
             square.style.backgroundColor = "white";
-            square.addEventListener("mouseenter", e => square.style.backgroundColor = getRandomColor());
+            square.addEventListener("mouseenter", e => {
+                square.style.backgroundColor = getRandomColor();
+            });
             newRow.appendChild(square);
         }
         container.appendChild(newRow);

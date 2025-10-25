@@ -20,3 +20,5 @@ This project was created to practice:
 
 ## 📸 Preview
 ![Etch-a-Sketch Preview](./images/preview.png)
+
+🖋️ **Author:** Lance Santos
